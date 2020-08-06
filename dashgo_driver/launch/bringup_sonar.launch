@@ -1,0 +1,6 @@
+<launch>
+   <node name="dashgo_driver" pkg="dashgo_driver" type="dashgo_driver_sonar.py" output="screen">
+      <rosparam file="$(find dashgo_driver)/config/my_dashgo_params.yaml" command="load" />
+   </node>
+</launch>
+

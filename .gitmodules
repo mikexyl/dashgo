@@ -1,0 +1,3 @@
+[submodule "dashgo_docker.git"]
+	path = dashgo_docker
+	url = https://github.com/LXYYY/dashgo_docker.git

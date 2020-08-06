@@ -1,0 +1,12 @@
+<launch>
+  <include file="$(find dashgo_driver)/launch/demo.launch"/>
+  <include file="$(find flashgo)/launch/flash_lidar.launch"/>
+  <include file="$(find dashgo_description)/launch/dashgo_description.launch"/>
+
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser4" 
+   args="0.18 0.0 0.2 -3.06 3.14  0.0 /base_footprint /laser_frame 40" />
+  <include file="$(find dashgo_nav)/launch/include/odom/gmapping.launch"/>
+  <include file="$(find dashgo_nav)/launch/include/odom/teb_move_base.launch"/>s
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+  <node name="robot_pose_publisher" pkg="robot_pose_publisher" type="robot_pose_publisher" />
+</launch>
