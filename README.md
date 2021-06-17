@@ -42,7 +42,7 @@
 ## Web Controller (really rough)
 (inside docker)
 1. Install modules of the website using npm, by npm install or something, **I can't remember, look it up!**
-2. Change the ip of the robot **manually**, [here](https://github.com/LXYYY/rosweb_controller/blob/2b866761264ab18b0d0d5d36d55f00c93395f687/main.js#L8). I know this is really stupid, maybe change it to `0.0.0.0` will be a good idea.
+2. Change the ip of the robot **manually**, [here](https://github.com/LXYYY/rosweb_controller/blob/2b866761264ab18b0d0d5d36d55f00c93395f687/main.js#L8). I know this is really stupid, maybe change it to `0.0.0.0` will be a good idea. And you can change speed limit [here](https://github.com/LXYYY/rosweb_controller/blob/2b866761264ab18b0d0d5d36d55f00c93395f687/main.js#L15).
 3. Then find a cellphone, open a browser. **Only works on some old browser, i.e. Edge, or some android-built-in browser. Chrome, Firefox, Safari... None of them can work**
 4. Open the address `<RobotIP>:8000`, and change the rosbridge address on the website to the address in Step 2. `8000` is the http port for the website, `9090` you will find in Step 2 is the rosbridge port for control.
 5. Click `Connect`, and use the on-screen joystick to control. The joystick is not very handy, need some practice.
