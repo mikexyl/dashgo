@@ -9,9 +9,9 @@
 
       *note: Foler paths are mounted in `docker run` params*, if you really need to change the paths, change the host paths in the mounting options in `Makefile`
 
-    1. `cd ${HOME}/Workspace/'
-    2. `git clone git@github.com:LXYYY/dashgo.git dashgo_ws/src/dashgo'
-    3. `git clone git@github.com:LXYYY/rosweb_controller.git rosweb_ws'
+    1. `cd ${HOME}/Workspace/`
+    2. `git clone git@github.com:LXYYY/dashgo.git dashgo_ws/src/dashgo`
+    3. `git clone git@github.com:LXYYY/rosweb_controller.git rosweb_ws`
 
 
 2. Install docker. Since the source code provided is based on Ubuntu14, also tested on 16, anyway it's better to use it inside a docker.
